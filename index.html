@@ -16,6 +16,8 @@
             ];
           //initialize the "save" button
         const app = window.Telegram.WebApp;
+        console.log(app.initData);
+        console.log(app.initDataUnsafe.start_param);
         app.expand();
         
         const mainButton = app.MainButton;
