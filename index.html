@@ -15,7 +15,10 @@
                 { name: "dairy", value: 5 }
             ];
           //initialize the "save" button
-        const mainButton = window.Telegram.WebApp.MainButton;
+        const app = window.Telegram.WebApp;
+        app.expand();
+        
+        const mainButton = app.MainButton;
         mainButton.text = "Save Preferences";
         mainButton.enable();
         mainButton.show();
