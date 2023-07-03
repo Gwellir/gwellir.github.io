@@ -2,39 +2,72 @@
   <head>
     <!-- Load the Telegram Library -->
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <!--Load the AngularJS Library-->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <!--Load the VueJS Library-->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+      .selected {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Voting</h1>
+      <h4>Candidates</h4>
+      <div class="candidates">
+        <div class="candidate_card" :class="{selected: candidate.selected}" v-for="candidate of candidates" :key="candidate.mal_cid">
+            <img :src="candidate.img" :alt="candidate.name" height=150px @click="swapSelection(candidate)">
+            <p>{{candidate.name}} ({{candidate.source}})</p>
+        </div>
+      </div>
+    </div>
     <script>
-      //initialize the AngularJS stuff...
-      angular.module("custom-webapp-ui", []).controller('CustomUIController', function CustomUIController($scope) {
-        //init our slider values that we will display
-        $scope.foods = [
-                { name: "fruits", value: 5 },
-                { name: "vegetables", value: 5 },
-                { name: "meat", value: 5 },
-                { name: "dairy", value: 5 }
-            ];
-          //initialize the "save" button
-        const app = window.Telegram.WebApp;
-        console.log(app.initData);
-        console.log(app.initDataUnsafe.start_param);
-        app.expand();
-        
-        const mainButton = app.MainButton;
-        mainButton.text = "Save Preferences";
-        mainButton.enable();
-        mainButton.show();
-        // and make it send the "foods" object (as JSON string) back to the backend
-        mainButton.onClick(function(){
-          window.Telegram.WebApp.sendData(JSON.stringify($scope.foods));
-        })
+      const app = new Vue({
+        el: '#app',
+        data: {
+          app: window.Telegram.WebApp,
+          candidates: [
+            {mal_cid: 181419, name: 'Akito Yamada', source: 'Yamada-kun to Lv999 no Koi wo Suru', img: 'https://cdn.myanimelist.net/images/characters/6/489089.jpg', selected: false},
+            {mal_cid: 181418, name: 'Akane Kinoshita', source: 'Yamada-kun to Lv999 no Koi wo Suru', img: 'https://cdn.myanimelist.net/images/characters/6/489090.jpg', selected: false},
+          ],
+        },
+        methods: {
+          swapSelection(candidate) {
+            candidate.selected = !candidate.selected;
+          },
+          getSelected() {
+            resultStr = '';
+            for (c of this.candidates) {
+              if (c.selected)
+                resultStr = `${resultStr}1`;
+              else
+                resultStr = `${resultStr}0`;
+            }
+            console.log(resultStr);
+          }
+        },
+        mounted(){
+          const MainButton = this.app.MainButton;
+          mainButton.text = "Send Results";
+          mainButton.enable();
+          mainButton.show();
+          mainButton.onClick(function() {
+            window.Telegram.WebApp.sendData(this.selectedString);
+          });
+        },
+        computed: {
+            selectedString() {
+            resultStr = '';
+            for (c of this.candidates) {
+              if (c.selected)
+                resultStr = `${resultStr}1`;
+              else
+                resultStr = `${resultStr}0`;
+            }
+            return resultStr;
+          },
+        },
       });
     </script>
-  </head>
-  <body ng-controller="CustomUIController">
-    <div ng-repeat="food in foods">
-      <div style="width: 100px; display: inline-block">{{food.name}} : {{food.value}}</div>
-      <input style="display: inline-block" type="range" min="1" max="10" ng-model="food.value" value="{{food.value}}">
-    </div>
   </body>
 </html>
