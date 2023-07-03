@@ -48,13 +48,7 @@
           }
         },
         mounted(){
-          const mainButton = this.webApp.MainButton;
-          mainButton.text = "Send Results";
-          mainButton.enable();
-          mainButton.show();
-          mainButton.onClick(function() {
-            this.webApp.sendData(this.selectedString);
-          });
+
         },
         computed: {
           selectedString() {
@@ -68,6 +62,13 @@
             return resultStr;
           },
         },
+      });
+      const mainButton = window.Telegram.WebApp.MainButton;
+      mainButton.text = "Send Results";
+      mainButton.enable();
+      mainButton.show();
+      mainButton.onClick(function() {
+        window.Telegram.WebApp.sendData(app.selectedString);
       });
     </script>
   </body>
