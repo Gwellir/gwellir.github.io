@@ -25,7 +25,7 @@
       const app = new Vue({
         el: '#app',
         data: {
-          app: window.Telegram.WebApp,
+          webApp: window.Telegram.WebApp,
           candidates: [
             {mal_cid: 181419, name: 'Akito Yamada', source: 'Yamada-kun to Lv999 no Koi wo Suru', img: 'https://cdn.myanimelist.net/images/characters/6/489089.jpg', selected: false},
             {mal_cid: 181418, name: 'Akane Kinoshita', source: 'Yamada-kun to Lv999 no Koi wo Suru', img: 'https://cdn.myanimelist.net/images/characters/6/489090.jpg', selected: false},
@@ -47,16 +47,16 @@
           }
         },
         mounted(){
-          const MainButton = this.app.MainButton;
+          const MainButton = this.webApp.MainButton;
           mainButton.text = "Send Results";
           mainButton.enable();
           mainButton.show();
           mainButton.onClick(function() {
-            window.Telegram.WebApp.sendData(this.selectedString);
+            this.webApp.sendData(this.selectedString);
           });
         },
         computed: {
-            selectedString() {
+          selectedString() {
             resultStr = '';
             for (c of this.candidates) {
               if (c.selected)
