@@ -22,13 +22,13 @@
     <div id="app">
       <h1>Voting</h1>
       <h4>Candidates</h4>
+      <!-- Список кандидатов, отображение img, name, source, после сидинга, вероятно, seed number -->
       <div class="candidates">
         <div class="candidate_card" :class="{selected: candidate.selected}" v-for="candidate of candidates" :key="candidate.mal_cid"  @click="swapSelection(candidate)">
             <img :src="candidate.img" :alt="candidate.name" height=150px>
             <p>{{candidate.name}} ({{candidate.source}})</p>
         </div>
       </div>
-      <p>{{selectedString}}</p>
     </div>
     <script>
       const app = new Vue({
@@ -43,9 +43,11 @@
         methods: {
           swapSelection(candidate) {
             candidate.selected = !candidate.selected;
+            // HapticFeedback вроде бы не работал, как минимум, у меня на телефоне
             window.Telegram.WebApp.HapticFeedback.selectionChanged();
           },
-          getSelected() {
+          // возвращает строку из 1 и 0, в соответствии со свойством selected для кандидатов по порядку
+          getSelectedString() {
             resultStr = '';
             for (c of this.candidates) {
               if (c.selected)
@@ -54,15 +56,15 @@
                 resultStr += "0";
             }
             console.log(resultStr);
+            return resultStr;
           },
           initFromJson(data) {
             this.candidates = data.candidates;
             this.stage = data.stage;
-            // this.user_data = this.WebApp.initData;
-            const urlParams = new URLSearchParams(window.location.search);
-            const votes = urlParams.get('votes');
-            this.unpackVotes(votes);
           },
+          // выставляет свойство selected кандидатам в зависимости от полученной в GET параметре 
+          // votes строки голосов текущего юзера
+          // строки может не быть, или она может относиться к другому туру
           unpackVotes(voteString) {
             if (!voteString)
               return;
@@ -75,29 +77,24 @@
           }
         },
         mounted(){
+          // загрузка данных кандидатов из data.json
           axios.get('data.json')
             .then(response => (this.initFromJson(response.data)))
             .catch(error => (console.log(error)));
+          // получение строки с голосами из GET параметра 'votes'
+          const urlParams = new URLSearchParams(window.location.search);
+          const votes = urlParams.get('votes');
+          this.unpackVotes(votes);
         },
-        computed: {
-          selectedString() {
-            let resultStr = '';
-            for (c of this.candidates) {
-              if (c.selected)
-                resultStr = `${resultStr}1`;
-              else
-                resultStr = `${resultStr}0`;
-            }
-            return resultStr;
-          },
-        },
+        computed: {},
       });
+      // Инициализация кнопки для отправки данных обратно боту
       const mainButton = window.Telegram.WebApp.MainButton;
       mainButton.text = "Send Votes";
       mainButton.enable();
       mainButton.show();
       mainButton.onClick(function() {
-        window.Telegram.WebApp.sendData(app.selectedString);
+        window.Telegram.WebApp.sendData(app.getSelectedString());
       });
     </script>
   </body>
