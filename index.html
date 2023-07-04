@@ -23,8 +23,8 @@
       <h1>Voting</h1>
       <h4>Candidates</h4>
       <div class="candidates">
-        <div class="candidate_card" :class="{selected: candidate.selected}" v-for="candidate of candidates" :key="candidate.mal_cid">
-            <img :src="candidate.img" :alt="candidate.name" height=150px @click="swapSelection(candidate)">
+        <div class="candidate_card" :class="{selected: candidate.selected}" v-for="candidate of candidates" :key="candidate.mal_cid"  @click="swapSelection(candidate)">
+            <img :src="candidate.img" :alt="candidate.name" height=150px>
             <p>{{candidate.name}} ({{candidate.source}})</p>
         </div>
       </div>
