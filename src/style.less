@@ -1,12 +1,4 @@
-//@textColor: black;
-//@hintColor: gray;
-//@bgColor: white;
-//@secondaryColor: lightgray;
-
-@textColor: var(--tg-theme-text-color);
-@hintColor: var(--tg-theme-hint-color);
-@bgColor: var(--tg-theme-bg-color);
-@secondaryColor: var(--tg-theme-secondary-bg-color);
+@import "colors";
 
 html {
   background-color: @secondaryColor;
@@ -44,17 +36,22 @@ h3, h4 {
 .candidate-card {
   display: flex;
   width: 100%;
-  flex-wrap: nowrap;
   opacity: 0.7;
   border-radius: 10px;
+  padding: 5px;
   overflow: hidden;
   border: 2px solid @secondaryColor;
   background-color: @bgColor;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 
   &__img {
     display: flex;
     flex-grow: 0;
     width: 100px;
+    height: 100px;
     align-self: center;
     text-align: center;
 
@@ -62,13 +59,15 @@ h3, h4 {
       width: auto;
       height: auto;
       max-width: 100%;
-      max-height: 100px;
+      max-height: 100%;
+      border-radius: 5px;
       display: inline-block;
     }
   }
 
   &__data {
     width: 100%;
+    text-align: center;
   }
 
   &__name {
@@ -82,21 +81,14 @@ h3, h4 {
     color: @hintColor;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-size: smaller;
   }
 }
 
 .candidates {
   display: flex;
-  //justify-content: space-between;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 1rem;
   overflow: hidden;
-  padding: 10px;
+  flex: 1 1 calc((100% / 2) - 2rem)
 }
-
-/*
-
-.selected {
-  background-color: #aaa;
-  outline: 1px solid black;
-}*/

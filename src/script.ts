@@ -18,6 +18,11 @@ enum VotingStage {
     SELECT_TO_VOTING = 0
 }
 
+let VotingLocalization:any = {
+    0: "Candidates",
+    1: "1st tour"
+}
+
 class Renderer {
     static renderCandidateView(candidate: CandidateData, options: {
         readonly: boolean,
@@ -33,7 +38,7 @@ class Renderer {
 <div class="candidate-card__img"><img src="${candidate.img}" alt="${candidate.name}"></div>            
             <div class="candidate-card__data">
                 <span class="candidate-card__name">${candidate.name}</span>
-                <span class="candidate-cQard__src">${candidate.source}</span>            
+                <span class="candidate-card__src">${candidate.source}</span>            
             </div>            
         </div>
         </label>`
@@ -44,8 +49,6 @@ class Renderer {
         byGroups: boolean
     }): string {
         return `
-<h1>Voting</h1>
-      <h4>Candidates</h4>
       <!-- Список кандидатов, отображение img, name, source, после сидинга, вероятно, seed number -->
       <form class="candidates">${candidates.map(item =>
             Renderer.renderCandidateView(item, {
@@ -69,7 +72,9 @@ class Voting {
     init() {
         this.fetchData()
             .then((response: VotingSrcData) => {
-                this.el.innerHTML = Renderer.renderCandidateList(this.populateCandidates(response.candidates), {
+                let title:string = `<h1>Voting: <smaller>${VotingLocalization[response.stage]}</smaller></h1>`
+
+                this.el.innerHTML = title + Renderer.renderCandidateList(this.populateCandidates(response.candidates), {
                     readonly: false,
                     byGroups: response.stage !== VotingStage.SELECT_TO_VOTING
                 })
