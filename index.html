@@ -51,8 +51,10 @@
           initFromJson(data) {
             this.candidates = data.candidates;
             this.stage = data.stage;
-            this.user_data = window.Telegram.WebApp.initData;
-            this.unpackVotes(window.Telegram.WebApp.initDataUnsafe.start_param);
+            // this.user_data = this.WebApp.initData;
+            const urlParams = new URLSearchParams(window.location.search);
+            const votes = urlParams.get('votes');
+            this.unpackVotes(votes);
           },
           unpackVotes(voteString) {
             if (!voteString)
