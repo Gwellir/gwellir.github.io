@@ -25,20 +25,28 @@ var Renderer = /** @class */ (function () {
 }());
 var Voting = /** @class */ (function () {
     function Voting(el) {
-        var _this = this;
         this.el = el;
+        this.readyCallback = null;
+    }
+    Voting.prototype.onReady = function (callback) {
+        this.readyCallback = callback;
+    };
+    Voting.prototype.init = function () {
+        var _this = this;
         this.fetchData()
             .then(function (response) {
             _this.el.innerHTML = Renderer.renderCandidateList(_this.populateCandidates(response.candidates), {
                 readonly: false,
                 byGroups: response.stage !== VotingStage.SELECT_TO_VOTING
             });
-            var voteEl = document.getElementById("vote");
-            voteEl && voteEl.addEventListener("click", _this.vote.bind(_this));
-            var resetEl = document.getElementById("reset");
-            resetEl && resetEl.addEventListener("click", _this.reset.bind(_this));
+            /*let voteEl: HTMLElement = document.getElementById("vote") as HTMLElement;
+            voteEl && voteEl.addEventListener("click", this.vote.bind(this))
+
+            let resetEl: HTMLElement = document.getElementById("reset") as HTMLElement;
+            resetEl && resetEl.addEventListener("click", this.reset.bind(this))*/
+            _this.readyCallback && _this.readyCallback();
         });
-    }
+    };
     Voting.prototype.fetchData = function () {
         return fetch('data.json')
             .then(function (response) {
@@ -63,13 +71,6 @@ var Voting = /** @class */ (function () {
             res += candidate && candidate.checked ? "1" : "0";
         }
         return res;
-    };
-    Voting.prototype.vote = function () {
-        console.log("selected", this.getSelected());
-    };
-    Voting.prototype.reset = function () {
-        var form = document.querySelector("form");
-        form && form.reset();
     };
     return Voting;
 }());
