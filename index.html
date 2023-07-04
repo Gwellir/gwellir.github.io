@@ -6,8 +6,14 @@
     <!--Load the VueJS Library-->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <style>
-      .selected {
+      .candidates {
         background-color: #ddd;
+      }
+      .candidate_card {
+        border: 1px solid black;
+      }
+      .selected {
+        background-color: #aaa;
         outline: 1px solid black;
       }
     </style>
@@ -37,7 +43,7 @@
         methods: {
           swapSelection(candidate) {
             candidate.selected = !candidate.selected;
-            window.Telegram.HapticFeedback.selectionChanged();
+            window.Telegram.WebApp.HapticFeedback.selectionChanged();
           },
           getSelected() {
             resultStr = '';
@@ -86,7 +92,6 @@
           },
         },
       });
-      window.Telegram.WebApp.setBackgroundColor("#FFFFFF");
       const mainButton = window.Telegram.WebApp.MainButton;
       mainButton.text = "Send Votes";
       mainButton.enable();
