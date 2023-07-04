@@ -22,7 +22,7 @@
   opacity: 0.7;
   border-radius: 10px;
   overflow: hidden;
-  border: 2px solid var(--tg-theme-bg-color);
+  border: 2px solid var(--tg-theme-secondary-bg-color);
   background-color: var(--tg-theme-bg-color);
 }
 .candidate-card__img {
@@ -54,7 +54,7 @@
   text-overflow: ellipsis;
 }
 .candidates {
-  background-color: var(--tg-theme-bg-color);
+  background-color: var(--tg-theme-secondary-bg-color);
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
