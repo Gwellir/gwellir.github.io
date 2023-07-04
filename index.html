@@ -37,6 +37,7 @@
         methods: {
           swapSelection(candidate) {
             candidate.selected = !candidate.selected;
+            window.Telegram.HapticFeedback.selectionChanged();
           },
           getSelected() {
             resultStr = '';
@@ -86,7 +87,7 @@
         },
       });
       const mainButton = window.Telegram.WebApp.MainButton;
-      mainButton.text = "Send Results";
+      mainButton.text = "Send Votes";
       mainButton.enable();
       mainButton.show();
       mainButton.onClick(function() {
