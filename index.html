@@ -61,6 +61,11 @@
           initFromJson(data) {
             this.candidates = data.candidates;
             this.stage = data.stage;
+            // получение строки с голосами из GET параметра 'votes'
+            // для распаковки требуются заполненные this.candidates
+            const urlParams = new URLSearchParams(window.location.search);
+            const votes = urlParams.get('votes');
+            this.unpackVotes(votes);
           },
           // выставляет свойство selected кандидатам в зависимости от полученной в GET параметре 
           // votes строки голосов текущего юзера
@@ -81,10 +86,6 @@
           axios.get('data.json')
             .then(response => (this.initFromJson(response.data)))
             .catch(error => (console.log(error)));
-          // получение строки с голосами из GET параметра 'votes'
-          const urlParams = new URLSearchParams(window.location.search);
-          const votes = urlParams.get('votes');
-          this.unpackVotes(votes);
         },
         computed: {},
       });
