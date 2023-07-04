@@ -49,9 +49,9 @@
             resultStr = '';
             for (c of this.candidates) {
               if (c.selected)
-                resultStr = `${resultStr}1`;
+                resultStr += "1";
               else
-                resultStr = `${resultStr}0`;
+                resultStr += "0";
             }
             console.log(resultStr);
           },
