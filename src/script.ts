@@ -93,13 +93,18 @@ class Renderer {
 
 class Voting {
     private readyCallback: Function | null = null;
+    private closeCallback: Function | null = null;
+
     private stage: number = 0;
 
     constructor(private el: HTMLElement) {
     }
 
-    onReady(callback: Function) {
+    onReadyToVote(callback: Function) {
         this.readyCallback = callback;
+    }
+    onReadyToClose(callback: Function) {
+        this.closeCallback = callback;
     }
 
     init() {
@@ -151,7 +156,7 @@ class Voting {
                     }
                 }
 
-                step !== VotingStage.WINNER && this.readyCallback && this.readyCallback();
+                step !== VotingStage.WINNER ? (this.readyCallback && this.readyCallback()) : (this.closeCallback && this.closeCallback());
             })
     }
 

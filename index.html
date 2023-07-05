@@ -8,7 +8,7 @@
 <div id="app"></div>
 <script>
     var app = new Voting(document.getElementById("app"));
-    app.onReady(function () {
+    app.onReadyToVote(function () {
         const mainButton = window.Telegram.WebApp.MainButton;
         mainButton.text = "Send Votes";
         mainButton.enable();
@@ -16,6 +16,17 @@
         mainButton.onClick(function () {
             window.Telegram.WebApp.sendData(JSON.stringify(app.getSelected()));
         });
+        window.Telegram.WebApp.ready();
+    });
+    app.onReadyToClose(function () {
+        const backButton = window.Telegram.WebApp.BackButton;
+        // mainButton.text = "Send Votes";
+        // backButton.enable();
+        backButton.show();
+        backButton.onClick(function () {
+            window.Telegram.WebApp.close();
+        });
+        window.Telegram.WebApp.ready();
     });
     app.init();
 </script>

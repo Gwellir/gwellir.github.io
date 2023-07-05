@@ -49,10 +49,14 @@ var Voting = /** @class */ (function () {
     function Voting(el) {
         this.el = el;
         this.readyCallback = null;
+        this.closeCallback = null;
         this.stage = 0;
     }
-    Voting.prototype.onReady = function (callback) {
+    Voting.prototype.onReadyToVote = function (callback) {
         this.readyCallback = callback;
+    };
+    Voting.prototype.onReadyToClose = function (callback) {
+        this.closeCallback = callback;
     };
     Voting.prototype.init = function () {
         var _this = this;
@@ -103,7 +107,7 @@ var Voting = /** @class */ (function () {
                     break;
                 }
             }
-            step !== VotingStage.WINNER && _this.readyCallback && _this.readyCallback();
+            step !== VotingStage.WINNER ? (_this.readyCallback && _this.readyCallback()) : (_this.closeCallback && _this.closeCallback());
         });
     };
     Voting.prototype.fetchData = function () {
