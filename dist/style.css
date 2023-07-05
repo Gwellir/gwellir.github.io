@@ -93,7 +93,8 @@ h4 {
   margin-right: -5px;
 }
 .candidate-group {
-  border: 2px solid var(--tg-theme-secondary-bg-color);
+  position: relative;
+  box-shadow: 0 0 5px var(--tg-theme-hint-color);
   border-radius: 10px;
   overflow: hidden;
   display: flex;
@@ -119,4 +120,23 @@ h4 {
 .candidate-group .candidate-card {
   border-radius: 0;
   border: none;
+}
+.candidate-group:before {
+  content: 'VS';
+  height: 20px;
+  width: 30px;
+  margin-left: -15px;
+  margin-top: -10px;
+  text-align: center;
+  z-index: 1;
+  font-weight: bold;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  pointer-events: none;
+  background: mediumpurple;
+  color: white;
+  border-radius: 3px;
+  line-height: 21px;
 }
