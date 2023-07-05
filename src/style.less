@@ -103,7 +103,7 @@ h3, h4 {
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   padding-top: 5px;
   margin-left: -5px;
@@ -118,11 +118,14 @@ h3, h4 {
   justify-content: space-between;
   flex-wrap: nowrap;
   max-width: 500px;
+  width: 100%;
+  margin: 0 5px 10px 5px;
 
   .candidate {
     width: 50%;
     max-width: none;
     border-right: 1px solid @secondaryColor;
+    margin: 0;
 
     & + .candidate {
       border-left: 1px solid @secondaryColor;
