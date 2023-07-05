@@ -173,7 +173,7 @@ var Voting = /** @class */ (function () {
         }
         return {
             stage: this.stage,
-            votes: res
+            votes: res || "0"
         };
     };
     return Voting;
