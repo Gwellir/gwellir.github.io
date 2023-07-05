@@ -242,7 +242,7 @@ class Voting {
 
         return {
             stage: this.stage,
-            votes: res
+            votes: res || "0"
         };
     }
 }

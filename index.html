@@ -19,12 +19,12 @@
         window.Telegram.WebApp.ready();
     });
     app.onReadyToClose(function () {
-        const backButton = window.Telegram.WebApp.BackButton;
-        // mainButton.text = "Send Votes";
-        // backButton.enable();
-        backButton.show();
-        backButton.onClick(function () {
-            window.Telegram.WebApp.close();
+        const mainButton = window.Telegram.WebApp.MainButton;
+        mainButton.text = "Close";
+        mainButton.enable();
+        mainButton.show();
+        mainButton.onClick(function () {
+            window.Telegram.WebApp.sendData(JSON.stringify(app.getSelected()));
         });
         window.Telegram.WebApp.ready();
     });
