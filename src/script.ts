@@ -31,12 +31,9 @@ class Renderer {
         readonly: boolean,
         groupName: string | null,
     }): string {
-        let id: string = `candidate${candidate.index}`;
-        let selectionInputHTML: string = options.groupName !== null ?
-            `type="radio" name="group${options.groupName}" value="candidate${candidate.index}"` :
-            `type="checkbox" name="candidate${candidate.index}" value="1"`;
-        return `<label for="${id}" class="candidate">
-<input ${selectionInputHTML} class="js-voting-item" id="${id}" data-id="${candidate.index}" ${options.readonly ? 'disabled' : ''} ${candidate.selected ? 'checked' : ''}/>
+        return `<label class="candidate">
+<input type="checkbox" name="candidate${candidate.index}" value="1" ${options.groupName ? ' data-group="' + options.groupName + '" ' : ''}
+    class="js-voting-item" data-id="${candidate.index}" ${options.readonly ? 'disabled' : ''} ${candidate.selected ? 'checked' : ''}/>
 <div class="candidate-card">
 <div class="candidate-card__img"><img src="${candidate.img}" alt="${candidate.name}"></div>            
             <div class="candidate-card__data">
@@ -106,7 +103,7 @@ class Voting {
                 let html: string = "";
                 switch (step) {
                     case VotingStage.SELECT_TO_VOTING: {
-                        html = Renderer.renderCandidateList(formattedCandidates, {
+                        this.el.innerHTML = title + Renderer.renderCandidateList(formattedCandidates, {
                             readonly: false
                         });
                         break;
@@ -115,21 +112,32 @@ class Voting {
                         formattedCandidates.forEach(candidate => {
                             candidate.selected = true;
                         })
-                        html = Renderer.renderCandidateList(formattedCandidates, {
+                        this.el.innerHTML = title + Renderer.renderCandidateList(formattedCandidates, {
                             readonly: true
                         });
                         break;
                     }
                     default: {
                         groups = this.getCandidatesByGroups(formattedCandidates);
-                        html = Renderer.renderCandidateListByGroups(groups, {
+                        this.el.innerHTML = title + Renderer.renderCandidateListByGroups(groups, {
                             readonly: false
                         });
+
+                        let checkboxEls:HTMLInputElement[] = Array.from(this.el.querySelectorAll(".js-voting-item"));
+                        checkboxEls.forEach((checkbox: HTMLInputElement) => {
+                            checkbox.addEventListener("change", function () {
+                                if (this.checked && this.dataset.group) {
+                                    checkboxEls.filter((chbx: HTMLInputElement) =>
+                                        chbx.dataset.group === this.dataset.group && this.dataset.id !== chbx.dataset.id)
+                                        .forEach((chbx: HTMLInputElement) => {
+                                            chbx.checked = false
+                                        })
+                                }
+                            })
+                        })
                         break;
                     }
                 }
-
-                this.el.innerHTML = title + html;
 
                 this.readyCallback && this.readyCallback();
             })
