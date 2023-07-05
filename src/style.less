@@ -1,5 +1,7 @@
 @import "colors";
 
+@spaceWidth: 10px;
+
 html {
   background-color: @secondaryColor;
 }
@@ -14,7 +16,7 @@ h3, h4 {
 
 .candidate {
   display: flex;
-  width: calc(50% - 2rem);
+  width: calc(50% - 2 * @spaceWidth);
   max-width: 300px;
 
   color: @textColor;
@@ -86,8 +88,21 @@ h3, h4 {
 .candidates {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: @spaceWidth;
   overflow: hidden;
   justify-content: center;
   width: 100%;
+}
+
+.candidate-group {
+  border: 2px solid @textColor;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+
+  //.candidate-card {
+
+  //background-color: @bgColor;
+  //}
 }

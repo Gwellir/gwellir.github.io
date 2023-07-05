@@ -11,7 +11,7 @@ h4 {
 }
 .candidate {
   display: flex;
-  width: calc(50% - 2rem);
+  width: calc(50% - 2 * 10px);
   max-width: 300px;
   color: var(--tg-theme-text-color);
   position: relative;
@@ -72,8 +72,15 @@ h4 {
 .candidates {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 10px;
   overflow: hidden;
   justify-content: center;
   width: 100%;
+}
+.candidate-group {
+  border: 2px solid var(--tg-theme-text-color);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
 }
