@@ -30,7 +30,22 @@ h3, h4 {
 
     &:checked ~ .candidate-card {
       opacity: 1;
-      border-color: mediumpurple;
+      box-shadow: 0 0 8px mediumpurple;
+      border-color: transparent;
+    }
+
+    &:checked:not(:disabled) ~ .candidate-card {
+      &:before {
+        content: ' ';
+        position: absolute;
+        display: block;
+        width: 30px;
+        height: 30px;
+        right: 15px;
+        top: 5px;
+        background: rgba(255,255,255,0.7) url(ok.svg) no-repeat center center;
+        z-index: 10;
+      }
     }
   }
 }
@@ -92,17 +107,36 @@ h3, h4 {
   overflow: hidden;
   justify-content: center;
   width: 100%;
+  padding-top: 10px;
 }
 
 .candidate-group {
-  border: 2px solid @textColor;
+  border: 2px solid @secondaryColor;
   border-radius: 10px;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
+  flex-wrap: nowrap;
+  max-width: 500px;
 
-  //.candidate-card {
+  .candidate {
+    width: 50%;
+    max-width: none;
+    border-right: 1px solid @secondaryColor;
 
-  //background-color: @bgColor;
-  //}
+    & + .candidate {
+      border-left: 1px solid @secondaryColor;
+      border-right: none;
+    }
+
+
+    input:checked ~ .candidate-card {
+      box-shadow: none;
+    }
+  }
+
+  .candidate-card {
+    border-radius: 0;
+    border: none;
+  }
 }

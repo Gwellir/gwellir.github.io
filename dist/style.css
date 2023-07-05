@@ -24,7 +24,19 @@ h4 {
 }
 .candidate input:checked ~ .candidate-card {
   opacity: 1;
-  border-color: mediumpurple;
+  box-shadow: 0 0 8px mediumpurple;
+  border-color: transparent;
+}
+.candidate input:checked:not(:disabled) ~ .candidate-card:before {
+  content: ' ';
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  right: 15px;
+  top: 5px;
+  background: rgba(255, 255, 255, 0.7) url(ok.svg) no-repeat center center;
+  z-index: 10;
 }
 .candidate-card {
   display: flex;
@@ -76,11 +88,30 @@ h4 {
   overflow: hidden;
   justify-content: center;
   width: 100%;
+  padding-top: 10px;
 }
 .candidate-group {
-  border: 2px solid var(--tg-theme-text-color);
+  border: 2px solid var(--tg-theme-secondary-bg-color);
   border-radius: 10px;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
+  flex-wrap: nowrap;
+  max-width: 500px;
+}
+.candidate-group .candidate {
+  width: 50%;
+  max-width: none;
+  border-right: 1px solid var(--tg-theme-secondary-bg-color);
+}
+.candidate-group .candidate + .candidate {
+  border-left: 1px solid var(--tg-theme-secondary-bg-color);
+  border-right: none;
+}
+.candidate-group .candidate input:checked ~ .candidate-card {
+  box-shadow: none;
+}
+.candidate-group .candidate-card {
+  border-radius: 0;
+  border: none;
 }
