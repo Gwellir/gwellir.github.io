@@ -44,6 +44,18 @@ class Renderer {
         </label>`
     }
 
+    static renderWinnerView(candidate: CandidateData): string {
+        return `<div class="candidate candidate--winner">
+        <div class="candidate-card">
+        <div class="candidate-card__img"><img src="${candidate.img}" alt="${candidate.name}"></div>            
+            <div class="candidate-card__data">
+                <span class="candidate-card__name">${candidate.name}</span>
+                <span class="candidate-card__src">${candidate.source}</span>            
+            </div>            
+        </div>
+        </div>`
+    }
+
     static renderCandidateList(candidates: CandidateData[], options: {
         readonly: boolean
     }): string {
@@ -56,6 +68,9 @@ class Renderer {
             })
         ).join("")}</form>
 `
+    }
+    static renderWinnerList(candidates: CandidateData[]): string {
+        return `<div class="candidates">${candidates.map(item =>Renderer.renderWinnerView(item)).join("")}</div>`
     }
 
     static renderCandidateListByGroups(groups: Map<string, CandidateData[]>, options: {
@@ -111,12 +126,7 @@ class Voting {
                         break;
                     }
                     case VotingStage.WINNER: {
-                        formattedCandidates.forEach(candidate => {
-                            candidate.selected = true;
-                        })
-                        this.el.innerHTML = title + Renderer.renderCandidateList(formattedCandidates, {
-                            readonly: true
-                        });
+                        this.el.innerHTML = title + Renderer.renderWinnerList(formattedCandidates);
                         break;
                     }
                     default: {
@@ -141,7 +151,7 @@ class Voting {
                     }
                 }
 
-                this.readyCallback && this.readyCallback();
+                step !== VotingStage.WINNER && this.readyCallback && this.readyCallback();
             })
     }
 
