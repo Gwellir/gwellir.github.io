@@ -25,13 +25,13 @@ var Renderer = /** @class */ (function () {
         }).join(""), "</form>\n");
     };
     Renderer.renderCandidateListByGroups = function (groups, options) {
-        // TODO: add reset button or reset radio fnc
         var listHTML = "";
         groups.forEach(function (candidates, key) {
+            var hasSelected = candidates.some(function (item) { return item.selected; });
             listHTML += "<div class=\"candidate-group\">".concat(candidates.map(function (item) {
                 return Renderer.renderCandidateView(item, {
                     groupName: key,
-                    readonly: options.readonly
+                    readonly: options.readonly || hasSelected
                 });
             }).join(""), "</div>");
         });
@@ -46,7 +46,6 @@ var Voting = /** @class */ (function () {
         this.stage = 0;
     }
     Voting.prototype.onReady = function (callback) {
-        // disable button if no one is selected
         this.readyCallback = callback;
     };
     Voting.prototype.init = function () {

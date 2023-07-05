@@ -63,10 +63,12 @@ class Renderer {
     }): string {
         let listHTML: string = "";
         groups.forEach((candidates: CandidateData[], key: string) => {
+            let hasSelected:boolean = candidates.some(item => item.selected);
+
             listHTML += `<div class="candidate-group">${candidates.map(item =>
                 Renderer.renderCandidateView(item, {
                     groupName: key,
-                    readonly: options.readonly
+                    readonly: options.readonly || hasSelected
                 })
             ).join("")}</div>`
         })

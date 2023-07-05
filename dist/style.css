@@ -28,7 +28,7 @@ h4 {
   box-shadow: 0 0 5px mediumpurple;
   border-color: transparent;
 }
-.candidate input:checked:not(:disabled) ~ .candidate-card:before {
+.candidate input:checked ~ .candidate-card:before {
   content: ' ';
   position: absolute;
   display: block;
@@ -38,6 +38,9 @@ h4 {
   top: 5px;
   background: transparent url(ok.svg) no-repeat center center;
   z-index: 10;
+}
+.candidate input:disabled ~ .candidate-card:before {
+  filter: grayscale(1);
 }
 .candidate-card {
   display: flex;

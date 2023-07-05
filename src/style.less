@@ -33,7 +33,7 @@ h3, h4 {
       border-color: transparent;
     }
 
-    &:checked:not(:disabled) ~ .candidate-card {
+    &:checked ~ .candidate-card {
       &:before {
         content: ' ';
         position: absolute;
@@ -45,6 +45,9 @@ h3, h4 {
         background: transparent url(ok.svg) no-repeat center center;
         z-index: 10;
       }
+    }
+    &:disabled ~ .candidate-card:before {
+      filter: grayscale(1);
     }
   }
 }
@@ -132,7 +135,6 @@ h3, h4 {
       border-left: 1px solid @secondaryColor;
       border-right: none;
     }
-
 
     input:checked ~ .candidate-card {
       box-shadow: none;
