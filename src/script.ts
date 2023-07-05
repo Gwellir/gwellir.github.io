@@ -22,7 +22,7 @@ enum VotingStage {
 
 let VotingLocalization: any = {
     0: "Candidates",
-    1: "Vote",
+    1: "Vote #{stage}",
     2: "Winner"
 }
 
@@ -79,6 +79,7 @@ class Renderer {
 
 class Voting {
     private readyCallback: Function | null = null;
+    private stage: number = 0;
 
     constructor(private el: HTMLElement) {
     }
@@ -90,19 +91,20 @@ class Voting {
     init() {
         this.fetchData()
             .then((response: VotingSrcData) => {
-                let stage:VotingStage = VotingStage.SELECT_TO_VOTING;
+                this.stage = this.getCurrentStage();
+                let step: VotingStage = VotingStage.SELECT_TO_VOTING;
                 let formattedCandidates: CandidateData[] = this.populateCandidates(response.candidates);
                 let groups: Map<string, CandidateData[]>;
 
-                if(formattedCandidates.length !== response.candidates.length) {
+                if (formattedCandidates.length !== response.candidates.length) {
                     if (formattedCandidates.length > 1 && formattedCandidates.length % 2 === 0)
-                        stage = VotingStage.VOTING
-                    else stage = VotingStage.WINNER;
+                        step = VotingStage.VOTING
+                    else step = VotingStage.WINNER;
                 }
 
-                let title: string = `<h1>Voting: <smaller>${VotingLocalization[stage]}</smaller></h1>`
+                let title: string = `<h1>Voting: <smaller>${VotingLocalization[step].replace("{stage}", this.stage)}</smaller></h1>`
                 let html: string = "";
-                switch (stage) {
+                switch (step) {
                     case VotingStage.SELECT_TO_VOTING: {
                         html = Renderer.renderCandidateList(formattedCandidates, {
                             readonly: false
@@ -110,7 +112,7 @@ class Voting {
                         break;
                     }
                     case VotingStage.WINNER: {
-                        formattedCandidates.forEach(candidate =>{
+                        formattedCandidates.forEach(candidate => {
                             candidate.selected = true;
                         })
                         html = Renderer.renderCandidateList(formattedCandidates, {
@@ -141,12 +143,12 @@ class Voting {
     }
 
     private getCandidatesByGroups(candidates: CandidateData[]): Map<string, CandidateData[]> {
-        let groups:Map<string, CandidateData[]> = new Map();
+        let groups: Map<string, CandidateData[]> = new Map();
 
         candidates.forEach(candidate => {
             let key: string = candidate.group;
 
-            let oldArr:CandidateData[] = groups.get(key) || [];
+            let oldArr: CandidateData[] = groups.get(key) || [];
             oldArr.push(candidate);
             groups.set(key, oldArr);
         })
@@ -169,6 +171,11 @@ class Voting {
             item.selected = votes.some(idx => idx === index);
             return item;
         });
+    }
+
+    private getCurrentStage(): number {
+        const urlParams = new URLSearchParams(window.location.search);
+        return Number(urlParams.get('stage') || "0");
     }
 
     private getVotedIdx(): number[] {
@@ -195,7 +202,10 @@ class Voting {
         return res;
     }
 
-    public getSelected(): string {
+    public getSelected(): {
+        stage: number,
+        votes: string
+    } {
         let len: number = document.querySelectorAll(".js-voting-item").length,
             res: string = "";
 
@@ -205,6 +215,9 @@ class Voting {
             res += candidate && candidate.checked ? "1" : "0";
         }
 
-        return res;
+        return {
+            stage: this.stage,
+            votes: res
+        };
     }
 }

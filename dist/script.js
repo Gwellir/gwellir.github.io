@@ -7,7 +7,7 @@ var VotingStage;
 })(VotingStage || (VotingStage = {}));
 var VotingLocalization = {
     0: "Candidates",
-    1: "Vote",
+    1: "Vote #{stage}",
     2: "Winner"
 };
 var Renderer = /** @class */ (function () {
@@ -46,6 +46,7 @@ var Voting = /** @class */ (function () {
     function Voting(el) {
         this.el = el;
         this.readyCallback = null;
+        this.stage = 0;
     }
     Voting.prototype.onReady = function (callback) {
         this.readyCallback = callback;
@@ -54,18 +55,19 @@ var Voting = /** @class */ (function () {
         var _this = this;
         this.fetchData()
             .then(function (response) {
-            var stage = VotingStage.SELECT_TO_VOTING;
+            _this.stage = _this.getCurrentStage();
+            var step = VotingStage.SELECT_TO_VOTING;
             var formattedCandidates = _this.populateCandidates(response.candidates);
             var groups;
             if (formattedCandidates.length !== response.candidates.length) {
                 if (formattedCandidates.length > 1 && formattedCandidates.length % 2 === 0)
-                    stage = VotingStage.VOTING;
+                    step = VotingStage.VOTING;
                 else
-                    stage = VotingStage.WINNER;
+                    step = VotingStage.WINNER;
             }
-            var title = "<h1>Voting: <smaller>".concat(VotingLocalization[stage], "</smaller></h1>");
+            var title = "<h1>Voting: <smaller>".concat(VotingLocalization[step].replace("{stage}", _this.stage), "</smaller></h1>");
             var html = "";
-            switch (stage) {
+            switch (step) {
                 case VotingStage.SELECT_TO_VOTING: {
                     html = Renderer.renderCandidateList(formattedCandidates, {
                         readonly: false
@@ -124,6 +126,10 @@ var Voting = /** @class */ (function () {
             return item;
         });
     };
+    Voting.prototype.getCurrentStage = function () {
+        var urlParams = new URLSearchParams(window.location.search);
+        return Number(urlParams.get('stage') || "0");
+    };
     Voting.prototype.getVotedIdx = function () {
         var urlParams = new URLSearchParams(window.location.search);
         var votes = urlParams.get('votes') || "";
@@ -150,7 +156,10 @@ var Voting = /** @class */ (function () {
             var candidate = document.querySelector(".js-voting-item[data-id='".concat(i, "']"));
             res += candidate && candidate.checked ? "1" : "0";
         }
-        return res;
+        return {
+            stage: this.stage,
+            votes: res
+        };
     };
     return Voting;
 }());
