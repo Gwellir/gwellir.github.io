@@ -87,7 +87,7 @@ h4 {
   flex-wrap: wrap;
   overflow: hidden;
   justify-content: center;
-  width: 100%;
+  width: calc(100% + 10px);
   padding-top: 5px;
   margin-left: -5px;
   margin-right: -5px;
@@ -100,6 +100,7 @@ h4 {
   justify-content: space-between;
   flex-wrap: nowrap;
   max-width: 500px;
+  width: calc(100% - 10px);
   margin: 0 5px 10px 5px;
 }
 .candidate-group .candidate {
