@@ -11,7 +11,8 @@ h4 {
 }
 .candidate {
   display: flex;
-  width: calc(50% - 2 * 10px);
+  width: calc(50% - 6px);
+  margin-bottom: 10px;
   max-width: 300px;
   color: var(--tg-theme-text-color);
   position: relative;
@@ -84,9 +85,8 @@ h4 {
 .candidates {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
   overflow: hidden;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
   padding-top: 10px;
 }

@@ -1,7 +1,5 @@
 @import "colors";
 
-@spaceWidth: 10px;
-
 html {
   background-color: @secondaryColor;
 }
@@ -16,7 +14,8 @@ h3, h4 {
 
 .candidate {
   display: flex;
-  width: calc(50% - 2 * @spaceWidth);
+  width: calc(50% - 6px);
+  margin-bottom: 10px;
   max-width: 300px;
 
   color: @textColor;
@@ -103,9 +102,8 @@ h3, h4 {
 .candidates {
   display: flex;
   flex-wrap: wrap;
-  gap: @spaceWidth;
   overflow: hidden;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
   padding-top: 10px;
 }
