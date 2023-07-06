@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "compile": "lessc src/style.less dist/style.css && npx tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.3",
+    "less": "^4.1.3",
+    "typescript": "^5.1.6"
+  }
+}

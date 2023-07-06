@@ -6,19 +6,27 @@
 </head>
 <body>
 <div id="app"></div>
-
 <script>
     var app = new Voting(document.getElementById("app"));
-    app.onReady(function () {
-        console.log("ready");
+    app.onReadyToVote(function () {
         const mainButton = window.Telegram.WebApp.MainButton;
         mainButton.text = "Send Votes";
         mainButton.enable();
         mainButton.show();
         mainButton.onClick(function () {
-            window.Telegram.WebApp.sendData(app.getSelected());
+            window.Telegram.WebApp.sendData(JSON.stringify(app.getSelected()));
         });
-
+        window.Telegram.WebApp.ready();
+    });
+    app.onReadyToClose(function () {
+        const mainButton = window.Telegram.WebApp.MainButton;
+        mainButton.text = "Close";
+        mainButton.enable();
+        mainButton.show();
+        mainButton.onClick(function () {
+            window.Telegram.WebApp.sendData(JSON.stringify(app.getSelected()));
+        });
+        window.Telegram.WebApp.ready();
     });
     app.init();
 </script>
