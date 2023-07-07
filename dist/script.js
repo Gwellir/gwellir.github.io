@@ -2,14 +2,19 @@
 var VotingStage;
 (function (VotingStage) {
     VotingStage[VotingStage["SELECT_TO_VOTING"] = 0] = "SELECT_TO_VOTING";
-    VotingStage[VotingStage["VOTING"] = 1] = "VOTING";
-    VotingStage[VotingStage["WINNER"] = 2] = "WINNER";
+    VotingStage[VotingStage["VOTING_1"] = 1] = "VOTING_1";
+    VotingStage[VotingStage["VOTING_2"] = 2] = "VOTING_2";
+    VotingStage[VotingStage["VOTING_4"] = 4] = "VOTING_4";
+    VotingStage[VotingStage["VOTING"] = 5] = "VOTING";
+    VotingStage[VotingStage["WINNER"] = 6] = "WINNER";
 })(VotingStage || (VotingStage = {}));
-var VotingLocalization = {
-    0: "Candidates",
-    1: "Vote #{stage}",
-    2: "Winner"
-};
+var VotingLocalization = {};
+VotingLocalization[VotingStage.SELECT_TO_VOTING] = "Отборочные";
+VotingLocalization[VotingStage.VOTING] = "{stagePart} финала";
+VotingLocalization[VotingStage.VOTING_4] = "Четвертьфинал";
+VotingLocalization[VotingStage.VOTING_2] = "Полуфинал";
+VotingLocalization[VotingStage.VOTING_1] = "Финал";
+VotingLocalization[VotingStage.WINNER] = "Победитель";
 var Renderer = /** @class */ (function () {
     function Renderer() {
     }
@@ -72,8 +77,7 @@ var Voting = /** @class */ (function () {
                 else
                     step = VotingStage.WINNER;
             }
-            var title = "<h1>Voting: <smaller>".concat(VotingLocalization[step].replace("{stage}", _this.stage), "</smaller></h1>");
-            var html = "";
+            var title = "<h1>".concat(response.title, ": <smaller>").concat(VotingLocalization[step], "</smaller></h1>");
             switch (step) {
                 case VotingStage.SELECT_TO_VOTING: {
                     _this.el.innerHTML = title + Renderer.renderCandidateList(formattedCandidates, {
@@ -87,7 +91,10 @@ var Voting = /** @class */ (function () {
                 }
                 default: {
                     groups = _this.getCandidatesByGroups(formattedCandidates);
-                    _this.el.innerHTML = title + Renderer.renderCandidateListByGroups(groups, {
+                    var stagePart = groups.size;
+                    var title_1 = "<h1>".concat(response.title, ": <smaller>").concat((VotingLocalization[stagePart] || VotingLocalization[step])
+                        .replace("{stagePart}", "1/".concat(stagePart)), "</smaller></h1>");
+                    _this.el.innerHTML = title_1 + Renderer.renderCandidateListByGroups(groups, {
                         readonly: false
                     });
                     var checkboxEls_1 = Array.from(_this.el.querySelectorAll(".js-voting-item"));

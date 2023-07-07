@@ -1,5 +1,6 @@
-<html lang="en">
+<html lang="en" >
 <head>
+    <meta charset="utf-8">
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <link rel="stylesheet" href="dist/style.css">
     <script type="text/javascript" src="dist/script.js"></script>
@@ -10,7 +11,7 @@
     var app = new Voting(document.getElementById("app"));
     app.onReadyToVote(function () {
         const mainButton = window.Telegram.WebApp.MainButton;
-        mainButton.text = "Send Votes";
+        mainButton.text = "Голосовать";
         mainButton.enable();
         mainButton.show();
         mainButton.onClick(function () {
@@ -20,7 +21,7 @@
     });
     app.onReadyToClose(function () {
         const mainButton = window.Telegram.WebApp.MainButton;
-        mainButton.text = "Close";
+        mainButton.text = "Закрыть";
         mainButton.enable();
         mainButton.show();
         mainButton.onClick(function () {

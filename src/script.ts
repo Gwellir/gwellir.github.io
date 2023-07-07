@@ -11,20 +11,26 @@ interface CandidateData {
 interface VotingSrcData {
     candidates: CandidateData[],
     voting_id: number,
-    stage: number
+    stage: number,
+    title: string
 }
 
 enum VotingStage {
     SELECT_TO_VOTING = 0,
-    VOTING = 1,
-    WINNER = 2
+    VOTING_1 = 1,
+    VOTING_2 = 2,
+    VOTING_4 = 4,
+    VOTING = 5,
+    WINNER = 6
 }
 
-let VotingLocalization: any = {
-    0: "Candidates",
-    1: "Vote #{stage}",
-    2: "Winner"
-}
+let VotingLocalization:{[key:VotingStage | number]:string} = {};
+VotingLocalization[VotingStage.SELECT_TO_VOTING] = "Отборочные";
+VotingLocalization[VotingStage.VOTING] = "{stagePart} финала";
+VotingLocalization[VotingStage.VOTING_4] = "Четвертьфинал";
+VotingLocalization[VotingStage.VOTING_2] = "Полуфинал";
+VotingLocalization[VotingStage.VOTING_1] = "Финал";
+VotingLocalization[VotingStage.WINNER] = "Победитель";
 
 class Renderer {
     static renderCandidateView(candidate: CandidateData, options: {
@@ -121,8 +127,7 @@ class Voting {
                     else step = VotingStage.WINNER;
                 }
 
-                let title: string = `<h1>Voting: <smaller>${VotingLocalization[step].replace("{stage}", this.stage)}</smaller></h1>`
-                let html: string = "";
+                let title: string = `<h1>${response.title}: <smaller>${VotingLocalization[step]}</smaller></h1>`
                 switch (step) {
                     case VotingStage.SELECT_TO_VOTING: {
                         this.el.innerHTML = title + Renderer.renderCandidateList(formattedCandidates, {
@@ -136,6 +141,11 @@ class Voting {
                     }
                     default: {
                         groups = this.getCandidatesByGroups(formattedCandidates);
+                        let stagePart = groups.size;
+                        let title: string = `<h1>${response.title}: <smaller>${
+                            (VotingLocalization[stagePart] || VotingLocalization[step])
+                                .replace("{stagePart}", `1/${stagePart}`)}</smaller></h1>`
+
                         this.el.innerHTML = title + Renderer.renderCandidateListByGroups(groups, {
                             readonly: false
                         });
