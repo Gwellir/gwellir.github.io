@@ -1,1 +1,275 @@
-{"candidates": [{"name": "Isaki Magari", "source": "Kimi wa Houkago Insomnia", "selected": false, "img": "/img/654.jpg"}, {"name": "Elda", "source": "Edomae Elf", "selected": false, "img": "/img/655.jpg"}, {"name": "Kiruko", "source": "Tengoku Daimakyou", "selected": false, "img": "/img/656.jpg"}, {"name": "Maru", "source": "Tengoku Daimakyou", "selected": false, "img": "/img/657.jpg"}, {"name": "Mimihime", "source": "Tengoku Daimakyou", "selected": false, "img": "/img/658.jpg"}, {"name": "Ganta Nakami", "source": "Kimi wa Houkago Insomnia", "selected": false, "img": "/img/659.jpg"}, {"name": "Gabimaru", "source": "Jigokuraku", "selected": false, "img": "/img/660.jpg"}, {"name": "Sagiri Yamada Asaemon", "source": "Jigokuraku", "selected": false, "img": "/img/661.jpg"}, {"name": "Yuzuriha", "source": "Jigokuraku", "selected": false, "img": "/img/662.jpg"}, {"name": "Choubei Aza", "source": "Jigokuraku", "selected": false, "img": "/img/663.jpg"}, {"name": "Mitsumi Iwakura", "source": "Skip to Loafer", "selected": false, "img": "/img/664.jpg"}, {"name": "Aquamarine Hoshino", "source": "\"Oshi no Ko\"", "selected": false, "img": "/img/665.jpg"}, {"name": "Kana Arima", "source": "\"Oshi no Ko\"", "selected": false, "img": "/img/666.jpg"}, {"name": "Akane Kurokawa", "source": "\"Oshi no Ko\"", "selected": false, "img": "/img/667.jpg"}, {"name": "Tetsuo Tosu", "source": "My Home Hero", "selected": false, "img": "/img/668.jpg"}, {"name": "Mitsuki Yano", "source": "Watashi no Yuri wa Oshigoto desu!", "selected": false, "img": "/img/669.jpg"}, {"name": "Sumika Chibana", "source": "Watashi no Yuri wa Oshigoto desu!", "selected": false, "img": "/img/670.jpg"}, {"name": "Hime Shiraki", "source": "Watashi no Yuri wa Oshigoto desu!", "selected": false, "img": "/img/671.jpg"}, {"name": "Kanoko Mamiya", "source": "Watashi no Yuri wa Oshigoto desu!", "selected": false, "img": "/img/672.jpg"}, {"name": "Koito Koganei", "source": "Edomae Elf", "selected": false, "img": "/img/674.jpg"}, {"name": "Mitama", "source": "Kaminaki Sekai no Kamisama Katsudou", "selected": false, "img": "/img/675.jpg"}, {"name": "Dakini", "source": "Kaminaki Sekai no Kamisama Katsudou", "selected": false, "img": "/img/676.jpg"}, {"name": "Anri Hazeworth", "source": "Yuusha ga Shinda!", "selected": false, "img": "/img/677.jpg"}, {"name": "Marguerit Farom", "source": "Yuusha ga Shinda!", "selected": false, "img": "/img/678.jpg"}, {"name": "Liza Luna", "source": "Kawaisugi Crisis", "selected": false, "img": "/img/679.jpg"}, {"name": "Ai Hoshino", "source": "\"Oshi no Ko\"", "selected": false, "img": "/img/680.jpg"}, {"name": "Sousuke Shima", "source": "Skip to Loafer", "selected": false, "img": "/img/682.jpg"}, {"name": "Tokiko Tsukuyomi", "source": "Tonikaku Kawaii 2nd Season", "selected": false, "img": "/img/683.jpg"}, {"name": "Akane Kinoshita", "source": "Yamada-kun to Lv999 no Koi wo Suru", "selected": false, "img": "/img/684.jpg"}, {"name": "Momoko Maeda", "source": "Yamada-kun to Lv999 no Koi wo Suru", "selected": false, "img": "/img/685.jpg"}, {"name": "Einar", "source": "Vinland Saga Season 2", "selected": false, "img": "/img/686.jpg"}, {"name": "Snake", "source": "Vinland Saga Season 2", "selected": false, "img": "/img/687.jpg"}, {"name": "Arnheid", "source": "Vinland Saga Season 2", "selected": false, "img": "/img/688.jpg"}, {"name": "Thorgil", "source": "Vinland Saga Season 2", "selected": false, "img": "/img/689.jpg"}, {"name": "Sverkel", "source": "Vinland Saga Season 2", "selected": false, "img": "/img/690.jpg"}, {"name": "Wulf", "source": "Vinland Saga Season 2", "selected": false, "img": "/img/691.jpg"}, {"name": "Mem-Cho", "source": "\"Oshi no Ko\"", "selected": false, "img": "/img/692.jpg"}, {"name": "Akane Hououji", "source": "Megami no Caf\u00e9 Terrace", "selected": false, "img": "/img/694.jpg"}, {"name": "Kyoutarou Ichikawa", "source": "Boku no Kokoro no Yabai Yatsu", "selected": false, "img": "/img/695.jpg"}, {"name": "Anna Yamada", "source": "Boku no Kokoro no Yabai Yatsu", "selected": false, "img": "/img/696.jpg"}, {"name": "Akito Yamada", "source": "Yamada-kun to Lv999 no Koi wo Suru", "selected": false, "img": "/img/699.jpg"}, {"name": "Ouka Makuzawa", "source": "Megami no Caf\u00e9 Terrace", "selected": false, "img": "/img/700.jpg"}, {"name": "Shiragiku Ono", "source": "Megami no Caf\u00e9 Terrace", "selected": false, "img": "/img/701.jpg"}, {"name": "Riho Tsukishima", "source": "Megami no Caf\u00e9 Terrace", "selected": false, "img": "/img/702.jpg"}, {"name": "Ami Tsuruga", "source": "Megami no Caf\u00e9 Terrace", "selected": false, "img": "/img/703.jpg"}, {"name": "Takezou Kamota", "source": "Yamada-kun to Lv999 no Koi wo Suru", "selected": false, "img": "/img/704.jpg"}, {"name": "Eita Sasaki", "source": "Yamada-kun to Lv999 no Koi wo Suru", "selected": false, "img": "/img/705.jpg"}, {"name": "Yukari Tsubaki", "source": "Yamada-kun to Lv999 no Koi wo Suru", "selected": false, "img": "/img/706.jpg"}, {"name": "Ruby Hoshino", "source": "\"Oshi no Ko\"", "selected": false, "img": "/img/707.jpg"}, {"name": "Usami", "source": "Tengoku Daimakyou", "selected": false, "img": "/img/708.jpg"}], "title": "Весна 2023"}
+{
+    "candidates": [
+        {
+            "name" : "Yukichi",
+            "source" : "Dekiru Neko wa Kyou mo Yuuutsu",
+            "selected" : false,
+            "img" : "/img/709.jpg"
+        },
+        {
+            "name" : "Ai Mie",
+            "source" : "Suki na Ko ga Megane wo Wasureta",
+            "selected" : false,
+            "img" : "/img/710.jpg"
+        },
+        {
+            "name" : "Kaede Komura",
+            "source" : "Suki na Ko ga Megane wo Wasureta",
+            "selected" : false,
+            "img" : "/img/711.jpg"
+        },
+        {
+            "name" : "Aya Rindou",
+            "source" : "Undead Girl Murder Farce",
+            "selected" : false,
+            "img" : "/img/712.jpg"
+        },
+        {
+            "name" : "Tsugaru Shinuchi",
+            "source" : "Undead Girl Murder Farce",
+            "selected" : false,
+            "img" : "/img/713.jpg"
+        },
+        {
+            "name" : "Pride Royal Ivy",
+            "source" : "Higeki no Genkyou to Naru Saikyou Gedou Last Boss Joou wa Tami no Tame ni Tsukushimasu.",
+            "selected" : false,
+            "img" : "/img/714.jpg"
+        },
+        {
+            "name" : "Maou",
+            "source" : "Lv1 Maou to One Room Yuusha",
+            "selected" : false,
+            "img" : "/img/715.jpg"
+        },
+        {
+            "name" : "Zenia",
+            "source" : "Lv1 Maou to One Room Yuusha",
+            "selected" : false,
+            "img" : "/img/716.jpg"
+        },
+        {
+            "name" : "Reisalin Stout",
+            "source" : "Ryza no Atelier: Tokoyami no Joou to Himitsu no Kakurega",
+            "selected" : false,
+            "img" : "/img/717.jpg"
+        },
+        {
+            "name" : "Klaudia Valentz",
+            "source" : "Ryza no Atelier: Tokoyami no Joou to Himitsu no Kakurega",
+            "selected" : false,
+            "img" : "/img/718.jpg"
+        },
+        {
+            "name" : "Tiara Royal Ivy",
+            "source" : "Higeki no Genkyou to Naru Saikyou Gedou Last Boss Joou wa Tami no Tame ni Tsukushimasu.",
+            "selected" : false,
+            "img" : "/img/720.jpg"
+        },
+        {
+            "name" : "Vamirio",
+            "source" : "Helck",
+            "selected" : false,
+            "img" : "/img/721.jpg"
+        },
+        {
+            "name" : "Hyura",
+            "source" : "Helck",
+            "selected" : false,
+            "img" : "/img/722.jpg"
+        },
+        {
+            "name" : "Asuta",
+            "source" : "Helck",
+            "selected" : false,
+            "img" : "/img/723.jpg"
+        },
+        {
+            "name" : "Isuta",
+            "source" : "Helck",
+            "selected" : false,
+            "img" : "/img/724.jpg"
+        },
+        {
+            "name" : "Shunova",
+            "source" : "Helck",
+            "selected" : false,
+            "img" : "/img/725.jpg"
+        },
+        {
+            "name" : "Rococo",
+            "source" : "Helck",
+            "selected" : false,
+            "img" : "/img/726.jpg"
+        },
+        {
+            "name" : "Helck",
+            "source" : "Helck",
+            "selected" : false,
+            "img" : "/img/727.jpg"
+        },
+        {
+            "name" : "Lammis",
+            "source" : "Jidou Hanbaiki ni Umarekawatta Ore wa Meikyuu wo Samayou",
+            "selected" : false,
+            "img" : "/img/728.jpg"
+        },
+        {
+            "name" : "Boxxo",
+            "source" : "Jidou Hanbaiki ni Umarekawatta Ore wa Meikyuu wo Samayou",
+            "selected" : false,
+            "img" : "/img/729.jpg"
+        },
+        {
+            "name" : "Flay",
+            "source" : "Jitsu wa Ore, Saikyou deshita?",
+            "selected" : false,
+            "img" : "/img/730.jpg"
+        },
+        {
+            "name" : "Charlotte Zenfis",
+            "source" : "Jitsu wa Ore, Saikyou deshita?",
+            "selected" : false,
+            "img" : "/img/731.jpg"
+        },
+        {
+            "name" : "Liza",
+            "source" : "Jitsu wa Ore, Saikyou deshita?",
+            "selected" : false,
+            "img" : "/img/732.jpg"
+        },
+        {
+            "name" : "Aika Natsukawa",
+            "source" : "Yumemiru Danshi wa Genjitsushugisha",
+            "selected" : false,
+            "img" : "/img/733.jpg"
+        },
+        {
+            "name" : "Kei Ashida",
+            "source" : "Yumemiru Danshi wa Genjitsushugisha",
+            "selected" : false,
+            "img" : "/img/734.jpg"
+        },
+        {
+            "name" : "Rin Shinomiya",
+            "source" : "Yumemiru Danshi wa Genjitsushugisha",
+            "selected" : false,
+            "img" : "/img/735.jpg"
+        },
+        {
+            "name" : "Rinia Dedoldia",
+            "source" : "Mushoku Tensei II: Isekai Ittara Honki Dasu",
+            "selected" : false,
+            "img" : "/img/737.jpg"
+        },
+        {
+            "name" : "Pursena Adoldia",
+            "source" : "Mushoku Tensei II: Isekai Ittara Honki Dasu",
+            "selected" : false,
+            "img" : "/img/738.jpg"
+        },
+        {
+            "name" : "Sarasa Saionji",
+            "source" : "Liar Liar",
+            "selected" : false,
+            "img" : "/img/739.jpg"
+        },
+        {
+            "name" : "Shirayuki Himeji",
+            "source" : "Liar Liar",
+            "selected" : false,
+            "img" : "/img/740.jpg"
+        },
+        {
+            "name" : "Ariel Anemoi Asura",
+            "source" : "Mushoku Tensei II: Isekai Ittara Honki Dasu",
+            "selected" : false,
+            "img" : "/img/747.jpg"
+        },
+        {
+            "name" : "Kaede Sajou",
+            "source" : "Yumemiru Danshi wa Genjitsushugisha",
+            "selected" : false,
+            "img" : "/img/748.jpg"
+        },
+        {
+            "name" : "Shizuku Hasei",
+            "source" : "Undead Girl Murder Farce",
+            "selected" : false,
+            "img" : "/img/749.jpg"
+        },
+        {
+            "name" : "Shizuka Mikazuki",
+            "source" : "Zom 100: Zombie ni Naru made ni Shitai 100 no Koto",
+            "selected" : false,
+            "img" : "/img/750.jpg"
+        },
+        {
+            "name" : "Noir",
+            "source" : "Synduality: Noir",
+            "selected" : false,
+            "img" : "/img/751.jpg"
+        },
+        {
+            "name" : "Ellie",
+            "source" : "Synduality: Noir",
+            "selected" : false,
+            "img" : "/img/752.jpg"
+        },
+        {
+            "name" : "Ciel",
+            "source" : "Synduality: Noir",
+            "selected" : false,
+            "img" : "/img/753.jpg"
+        },
+        {
+            "name" : "Giselle Gewelle",
+            "source" : "Bleach: Sennen Kessen-hen - Ketsubetsu-tan",
+            "selected" : false,
+            "img" : "/img/754.jpg"
+        },
+        {
+            "name" : "Touji Fushiguro",
+            "source" : "Jujutsu Kaisen 2nd Season",
+            "selected" : false,
+            "img" : "/img/755.jpg"
+        },
+        {
+            "name" : "Sara",
+            "source" : "Mushoku Tensei II: Isekai Ittara Honki Dasu",
+            "selected" : false,
+            "img" : "/img/756.jpg"
+        },
+        {
+            "name" : "Soldat Heckler",
+            "source" : "Mushoku Tensei II: Isekai Ittara Honki Dasu",
+            "selected" : false,
+            "img" : "/img/757.jpg"
+        },
+        {
+            "name" : "Miyo Saimori",
+            "source" : "Watashi no Shiawase na Kekkon",
+            "selected" : false,
+            "img" : "/img/758.jpg"
+        },
+        {
+            "name" : "Kiyoka Kudou",
+            "source" : "Watashi no Shiawase na Kekkon",
+            "selected" : false,
+            "img" : "/img/759.jpg"
+        },
+        {
+            "name" : "Tianchen Li",
+            "source" : "Shiguang Dailiren II",
+            "selected" : false,
+            "img" : "/img/760.jpg"
+        },
+        {
+            "name" : "Jin Qian",
+            "source" : "Shiguang Dailiren II",
+            "selected" : false,
+            "img" : "/img/761.jpg"
+        }
+    ],
+    "title": "Лето 2023"
+}
