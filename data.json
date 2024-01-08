@@ -1,275 +1,287 @@
 {
-    "candidates": [
-        {
-            "name" : "Yukichi",
-            "source" : "Dekiru Neko wa Kyou mo Yuuutsu",
-            "selected" : false,
-            "img" : "/img/709.jpg"
-        },
-        {
-            "name" : "Ai Mie",
-            "source" : "Suki na Ko ga Megane wo Wasureta",
-            "selected" : false,
-            "img" : "/img/710.jpg"
-        },
-        {
-            "name" : "Kaede Komura",
-            "source" : "Suki na Ko ga Megane wo Wasureta",
-            "selected" : false,
-            "img" : "/img/711.jpg"
-        },
-        {
-            "name" : "Aya Rindou",
-            "source" : "Undead Girl Murder Farce",
-            "selected" : false,
-            "img" : "/img/712.jpg"
-        },
-        {
-            "name" : "Tsugaru Shinuchi",
-            "source" : "Undead Girl Murder Farce",
-            "selected" : false,
-            "img" : "/img/713.jpg"
-        },
-        {
-            "name" : "Pride Royal Ivy",
-            "source" : "Higeki no Genkyou to Naru Saikyou Gedou Last Boss Joou wa Tami no Tame ni Tsukushimasu.",
-            "selected" : false,
-            "img" : "/img/714.jpg"
-        },
-        {
-            "name" : "Maou",
-            "source" : "Lv1 Maou to One Room Yuusha",
-            "selected" : false,
-            "img" : "/img/715.jpg"
-        },
-        {
-            "name" : "Zenia",
-            "source" : "Lv1 Maou to One Room Yuusha",
-            "selected" : false,
-            "img" : "/img/716.jpg"
-        },
-        {
-            "name" : "Reisalin Stout",
-            "source" : "Ryza no Atelier: Tokoyami no Joou to Himitsu no Kakurega",
-            "selected" : false,
-            "img" : "/img/717.jpg"
-        },
-        {
-            "name" : "Klaudia Valentz",
-            "source" : "Ryza no Atelier: Tokoyami no Joou to Himitsu no Kakurega",
-            "selected" : false,
-            "img" : "/img/718.jpg"
-        },
-        {
-            "name" : "Tiara Royal Ivy",
-            "source" : "Higeki no Genkyou to Naru Saikyou Gedou Last Boss Joou wa Tami no Tame ni Tsukushimasu.",
-            "selected" : false,
-            "img" : "/img/720.jpg"
-        },
-        {
-            "name" : "Vamirio",
-            "source" : "Helck",
-            "selected" : false,
-            "img" : "/img/721.jpg"
-        },
-        {
-            "name" : "Hyura",
-            "source" : "Helck",
-            "selected" : false,
-            "img" : "/img/722.jpg"
-        },
-        {
-            "name" : "Asuta",
-            "source" : "Helck",
-            "selected" : false,
-            "img" : "/img/723.jpg"
-        },
-        {
-            "name" : "Isuta",
-            "source" : "Helck",
-            "selected" : false,
-            "img" : "/img/724.jpg"
-        },
-        {
-            "name" : "Shunova",
-            "source" : "Helck",
-            "selected" : false,
-            "img" : "/img/725.jpg"
-        },
-        {
-            "name" : "Rococo",
-            "source" : "Helck",
-            "selected" : false,
-            "img" : "/img/726.jpg"
-        },
-        {
-            "name" : "Helck",
-            "source" : "Helck",
-            "selected" : false,
-            "img" : "/img/727.jpg"
-        },
-        {
-            "name" : "Lammis",
-            "source" : "Jidou Hanbaiki ni Umarekawatta Ore wa Meikyuu wo Samayou",
-            "selected" : false,
-            "img" : "/img/728.jpg"
-        },
-        {
-            "name" : "Boxxo",
-            "source" : "Jidou Hanbaiki ni Umarekawatta Ore wa Meikyuu wo Samayou",
-            "selected" : false,
-            "img" : "/img/729.jpg"
-        },
-        {
-            "name" : "Flay",
-            "source" : "Jitsu wa Ore, Saikyou deshita?",
-            "selected" : false,
-            "img" : "/img/730.jpg"
-        },
-        {
-            "name" : "Charlotte Zenfis",
-            "source" : "Jitsu wa Ore, Saikyou deshita?",
-            "selected" : false,
-            "img" : "/img/731.jpg"
-        },
-        {
-            "name" : "Liza",
-            "source" : "Jitsu wa Ore, Saikyou deshita?",
-            "selected" : false,
-            "img" : "/img/732.jpg"
-        },
-        {
-            "name" : "Aika Natsukawa",
-            "source" : "Yumemiru Danshi wa Genjitsushugisha",
-            "selected" : false,
-            "img" : "/img/733.jpg"
-        },
-        {
-            "name" : "Kei Ashida",
-            "source" : "Yumemiru Danshi wa Genjitsushugisha",
-            "selected" : false,
-            "img" : "/img/734.jpg"
-        },
-        {
-            "name" : "Rin Shinomiya",
-            "source" : "Yumemiru Danshi wa Genjitsushugisha",
-            "selected" : false,
-            "img" : "/img/735.jpg"
-        },
-        {
-            "name" : "Rinia Dedoldia",
-            "source" : "Mushoku Tensei II: Isekai Ittara Honki Dasu",
-            "selected" : false,
-            "img" : "/img/737.jpg"
-        },
-        {
-            "name" : "Pursena Adoldia",
-            "source" : "Mushoku Tensei II: Isekai Ittara Honki Dasu",
-            "selected" : false,
-            "img" : "/img/738.jpg"
-        },
-        {
-            "name" : "Sarasa Saionji",
-            "source" : "Liar Liar",
-            "selected" : false,
-            "img" : "/img/739.jpg"
-        },
-        {
-            "name" : "Shirayuki Himeji",
-            "source" : "Liar Liar",
-            "selected" : false,
-            "img" : "/img/740.jpg"
-        },
-        {
-            "name" : "Ariel Anemoi Asura",
-            "source" : "Mushoku Tensei II: Isekai Ittara Honki Dasu",
-            "selected" : false,
-            "img" : "/img/747.jpg"
-        },
-        {
-            "name" : "Kaede Sajou",
-            "source" : "Yumemiru Danshi wa Genjitsushugisha",
-            "selected" : false,
-            "img" : "/img/748.jpg"
-        },
-        {
-            "name" : "Shizuku Hasei",
-            "source" : "Undead Girl Murder Farce",
-            "selected" : false,
-            "img" : "/img/749.jpg"
-        },
-        {
-            "name" : "Shizuka Mikazuki",
-            "source" : "Zom 100: Zombie ni Naru made ni Shitai 100 no Koto",
-            "selected" : false,
-            "img" : "/img/750.jpg"
-        },
-        {
-            "name" : "Noir",
-            "source" : "Synduality: Noir",
-            "selected" : false,
-            "img" : "/img/751.jpg"
-        },
-        {
-            "name" : "Ellie",
-            "source" : "Synduality: Noir",
-            "selected" : false,
-            "img" : "/img/752.jpg"
-        },
-        {
-            "name" : "Ciel",
-            "source" : "Synduality: Noir",
-            "selected" : false,
-            "img" : "/img/753.jpg"
-        },
-        {
-            "name" : "Giselle Gewelle",
-            "source" : "Bleach: Sennen Kessen-hen - Ketsubetsu-tan",
-            "selected" : false,
-            "img" : "/img/754.jpg"
-        },
-        {
-            "name" : "Touji Fushiguro",
-            "source" : "Jujutsu Kaisen 2nd Season",
-            "selected" : false,
-            "img" : "/img/755.jpg"
-        },
-        {
-            "name" : "Sara",
-            "source" : "Mushoku Tensei II: Isekai Ittara Honki Dasu",
-            "selected" : false,
-            "img" : "/img/756.jpg"
-        },
-        {
-            "name" : "Soldat Heckler",
-            "source" : "Mushoku Tensei II: Isekai Ittara Honki Dasu",
-            "selected" : false,
-            "img" : "/img/757.jpg"
-        },
-        {
-            "name" : "Miyo Saimori",
-            "source" : "Watashi no Shiawase na Kekkon",
-            "selected" : false,
-            "img" : "/img/758.jpg"
-        },
-        {
-            "name" : "Kiyoka Kudou",
-            "source" : "Watashi no Shiawase na Kekkon",
-            "selected" : false,
-            "img" : "/img/759.jpg"
-        },
-        {
-            "name" : "Tianchen Li",
-            "source" : "Shiguang Dailiren II",
-            "selected" : false,
-            "img" : "/img/760.jpg"
-        },
-        {
-            "name" : "Jin Qian",
-            "source" : "Shiguang Dailiren II",
-            "selected" : false,
-            "img" : "/img/761.jpg"
-        }
-    ],
-    "title": "Лето 2023"
+	"candidates": [
+		{
+			"name" : "Fuuko Izumo",
+			"source" : "Undead Unluck",
+			"selected": false,
+			"img" : "/img/762.jpg"
+		},
+		{
+			"name" : "Andy",
+			"source" : "Undead Unluck",
+			"selected": false,
+			"img" : "/img/763.jpg"
+		},
+		{
+			"name" : "Maomao",
+			"source" : "Kusuriya no Hitorigoto",
+			"selected": false,
+			"img" : "/img/764.jpg"
+		},
+		{
+			"name" : "Gesicht",
+			"source" : "Pluto",
+			"selected": false,
+			"img" : "/img/765.jpg"
+		},
+		{
+			"name" : "Atom",
+			"source" : "Pluto",
+			"selected": false,
+			"img" : "/img/766.jpg"
+		},
+		{
+			"name" : "Shary Shadow Assassin",
+			"source" : "Seiken Gakuin no Makentsukai",
+			"selected": false,
+			"img" : "/img/767.jpg"
+		},
+		{
+			"name" : "Pram Schneider",
+			"source" : "Kikansha no Mahou wa Tokubetsu desu",
+			"selected": false,
+			"img" : "/img/768.jpg"
+		},
+		{
+			"name" : "Azest Kingscrown",
+			"source" : "Kikansha no Mahou wa Tokubetsu desu",
+			"selected": false,
+			"img" : "/img/769.jpg"
+		},
+		{
+			"name" : "Romantica Eru",
+			"source" : "Kikansha no Mahou wa Tokubetsu desu",
+			"selected": false,
+			"img" : "/img/770.jpg"
+		},
+		{
+			"name" : "Terakomari Gandesblood",
+			"source" : "Hikikomari Kyuuketsuki no Monmon",
+			"selected": false,
+			"img" : "/img/771.jpg"
+		},
+		{
+			"name" : "Villhaze",
+			"source" : "Hikikomari Kyuuketsuki no Monmon",
+			"selected": false,
+			"img" : "/img/772.jpg"
+		},
+		{
+			"name" : "Mia Luna Tearmoon",
+			"source" : "Tearmoon Teikoku Monogatari: Dantoudai kara Hajimaru, Hime no Tensei Gyakuten Story",
+			"selected": false,
+			"img" : "/img/773.jpg"
+		},
+		{
+			"name" : "Jess Yesma",
+			"source" : "Buta no Liver wa Kanetsu Shiro",
+			"selected": false,
+			"img" : "/img/774.jpg"
+		},
+		{
+			"name" : "Pig",
+			"source" : "Buta no Liver wa Kanetsu Shiro",
+			"selected": false,
+			"img" : "/img/775.jpg"
+		},
+		{
+			"name" : "Rossi",
+			"source" : "Buta no Liver wa Kanetsu Shiro",
+			"selected": false,
+			"img" : "/img/776.jpg"
+		},
+		{
+			"name" : "Fairy Queen",
+			"source" : "Toaru Ossan no VRMMO Katsudouki",
+			"selected": false,
+			"img" : "/img/777.jpg"
+		},
+		{
+			"name" : "Konoha Akisato",
+			"source" : "16bit Sensation: Another Layer",
+			"selected": false,
+			"img" : "/img/778.jpg"
+		},
+		{
+			"name" : "Totomaru Isshiki",
+			"source" : "Kamonohashi Ron no Kindan Suiri",
+			"selected": false,
+			"img" : "/img/779.jpg"
+		},
+		{
+			"name" : "Ron Kamonohashi",
+			"source" : "Kamonohashi Ron no Kindan Suiri",
+			"selected": false,
+			"img" : "/img/780.jpg"
+		},
+		{
+			"name" : "Kanata Katagiri",
+			"source" : "MF Ghost",
+			"selected": false,
+			"img" : "/img/781.jpg"
+		},
+		{
+			"name" : "Haruka Asahina",
+			"source" : "Overtake!",
+			"selected": false,
+			"img" : "/img/782.jpg"
+		},
+		{
+			"name" : "Koutarou Komaki",
+			"source" : "Overtake!",
+			"selected": false,
+			"img" : "/img/783.jpg"
+		},
+		{
+			"name" : "Toshiki Tokumaru",
+			"source" : "Overtake!",
+			"selected": false,
+			"img" : "/img/784.jpg"
+		},
+		{
+			"name" : "Youko Sonoyama",
+			"source" : "Migi to Dali",
+			"selected": false,
+			"img" : "/img/785.jpg"
+		},
+		{
+			"name" : "Russian Foreigner",
+			"source" : "Under Ninja",
+			"selected": false,
+			"img" : "/img/786.jpg"
+		},
+		{
+			"name" : "Sein",
+			"source" : "Sousou no Frieren",
+			"selected": false,
+			"img" : "/img/787.jpg"
+		},
+		{
+			"name" : "Ren Saionji",
+			"source" : "MF Ghost",
+			"selected": false,
+			"img" : "/img/788.jpg"
+		},
+		{
+			"name" : "Frieren",
+			"source" : "Sousou no Frieren",
+			"selected": false,
+			"img" : "/img/789.jpg"
+		},
+		{
+			"name" : "Fern",
+			"source" : "Sousou no Frieren",
+			"selected": false,
+			"img" : "/img/790.jpg"
+		},
+		{
+			"name" : "Flamme",
+			"source" : "Sousou no Frieren",
+			"selected": false,
+			"img" : "/img/791.jpg"
+		},
+		{
+			"name" : "Himmel",
+			"source" : "Sousou no Frieren",
+			"selected": false,
+			"img" : "/img/792.jpg"
+		},
+		{
+			"name" : "Eisen",
+			"source" : "Sousou no Frieren",
+			"selected": false,
+			"img" : "/img/793.jpg"
+		},
+		{
+			"name" : "Heiter",
+			"source" : "Sousou no Frieren",
+			"selected": false,
+			"img" : "/img/794.jpg"
+		},
+		{
+			"name" : "Jinshi",
+			"source" : "Kusuriya no Hitorigoto",
+			"selected": false,
+			"img" : "/img/795.jpg"
+		},
+		{
+			"name" : "Gyokuyou",
+			"source" : "Kusuriya no Hitorigoto",
+			"selected": false,
+			"img" : "/img/796.jpg"
+		},
+		{
+			"name" : "Rentarou Aijou",
+			"source" : "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo",
+			"selected": false,
+			"img" : "/img/797.jpg"
+		},
+		{
+			"name" : "Karane Inda",
+			"source" : "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo",
+			"selected": false,
+			"img" : "/img/798.jpg"
+		},
+		{
+			"name" : "Shizuka Yoshimoto",
+			"source" : "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo",
+			"selected": false,
+			"img" : "/img/799.jpg"
+		},
+		{
+			"name" : "Nano Eiai",
+			"source" : "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo",
+			"selected": false,
+			"img" : "/img/800.jpg"
+		},
+		{
+			"name" : "Hakari Hanazono",
+			"source" : "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo",
+			"selected": false,
+			"img" : "/img/801.jpg"
+		},
+		{
+			"name" : "Kusuri Yakuzen",
+			"source" : "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo",
+			"selected": false,
+			"img" : "/img/802.jpg"
+		},
+		{
+			"name" : "Hahari Hanazono",
+			"source" : "Kimi no Koto ga Daidaidaidaidaisuki na 100-nin no Kanojo",
+			"selected": false,
+			"img" : "/img/803.jpg"
+		},
+		{
+			"name" : "Rae Taylor",
+			"source" : "Watashi no Oshi wa Akuyaku Reijou.",
+			"selected": false,
+			"img" : "/img/804.jpg"
+		},
+		{
+			"name" : "Claire François",
+			"source" : "Watashi no Oshi wa Akuyaku Reijou.",
+			"selected": false,
+			"img" : "/img/805.jpg"
+		},
+		{
+			"name" : "Umika Konohoshi",
+			"source" : "Hoshikuzu Telepath",
+			"selected": false,
+			"img" : "/img/806.jpg"
+		},
+		{
+			"name" : "Yuu Akeuchi",
+			"source" : "Hoshikuzu Telepath",
+			"selected": false,
+			"img" : "/img/807.jpg"
+		},
+		{
+			"name" : "FrostNova",
+			"source" : "Arknights: Touin Kiro",
+			"selected": false,
+			"img" : "/img/808.jpg"
+		}
+	],
+	"title": "Осень 2023"
 }
