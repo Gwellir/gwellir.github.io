@@ -1,0 +1,227 @@
+{
+	"candidates": [
+		{
+			"name" : "Emma Samanda",
+			"source" : "Ninja Kamui",
+			"selected" : false,
+			"img" : "/img/809.jpg"
+		},
+		{
+			"name" : "Joe Logan",
+			"source" : "Ninja Kamui",
+			"selected" : false,
+			"img" : "/img/810.jpg"
+		},
+		{
+			"name" : "Bravern",
+			"source" : "Yuuki Bakuhatsu Bang Bravern",
+			"selected" : false,
+			"img" : "/img/811.jpg"
+		},
+		{
+			"name" : "Lewis Smith",
+			"source" : "Yuuki Bakuhatsu Bang Bravern",
+			"selected" : false,
+			"img" : "/img/812.jpg"
+		},
+		{
+			"name" : "Isami Ao",
+			"source" : "Yuuki Bakuhatsu Bang Bravern",
+			"selected" : false,
+			"img" : "/img/813.jpg"
+		},
+		{
+			"name" : "Lulu",
+			"source" : "Yuuki Bakuhatsu Bang Bravern",
+			"selected" : false,
+			"img" : "/img/814.jpg"
+		},
+		{
+			"name" : "Hibiki Riou",
+			"source" : "Yuuki Bakuhatsu Bang Bravern",
+			"selected" : false,
+			"img" : "/img/815.jpg"
+		},
+		{
+			"name" : "Miyu Katou",
+			"source" : "Yuuki Bakuhatsu Bang Bravern",
+			"selected" : false,
+			"img" : "/img/816.jpg"
+		},
+		{
+			"name" : "Superbia",
+			"source" : "Yuuki Bakuhatsu Bang Bravern",
+			"selected" : false,
+			"img" : "/img/817.jpg"
+		},
+		{
+			"name" : "Akira Mishima",
+			"source" : "Yuuki Bakuhatsu Bang Bravern",
+			"selected" : false,
+			"img" : "/img/818.jpg"
+		},
+		{
+			"name" : "Shelley Rolen",
+			"source" : "Yuuki Bakuhatsu Bang Bravern",
+			"selected" : false,
+			"img" : "/img/819.jpg"
+		},
+		{
+			"name" : "Marcille Donato",
+			"source" : "Dungeon Meshi",
+			"selected" : false,
+			"img" : "/img/820.jpg"
+		},
+		{
+			"name" : "Guideau",
+			"source" : "Majo to Yajuu",
+			"selected" : false,
+			"img" : "/img/821.jpg"
+		},
+		{
+			"name" : "Denken",
+			"source" : "Sousou no Frieren",
+			"selected" : false,
+			"img" : "/img/822.jpg"
+		},
+		{
+			"name" : "Kanne",
+			"source" : "Sousou no Frieren",
+			"selected" : false,
+			"img" : "/img/823.jpg"
+		},
+		{
+			"name" : "Laufen",
+			"source" : "Sousou no Frieren",
+			"selected" : false,
+			"img" : "/img/824.jpg"
+		},
+		{
+			"name" : "Lawine",
+			"source" : "Sousou no Frieren",
+			"selected" : false,
+			"img" : "/img/825.jpg"
+		},
+		{
+			"name" : "Methode",
+			"source" : "Sousou no Frieren",
+			"selected" : false,
+			"img" : "/img/826.jpg"
+		},
+		{
+			"name" : "Sense",
+			"source" : "Sousou no Frieren",
+			"selected" : false,
+			"img" : "/img/827.jpg"
+		},
+		{
+			"name" : "Serie",
+			"source" : "Sousou no Frieren",
+			"selected" : false,
+			"img" : "/img/828.jpg"
+		},
+		{
+			"name" : "Übel",
+			"source" : "Sousou no Frieren",
+			"selected" : false,
+			"img" : "/img/829.jpg"
+		},
+		{
+			"name" : "Laios Touden",
+			"source" : "Dungeon Meshi",
+			"selected" : false,
+			"img" : "/img/830.jpg"
+		},
+		{
+			"name" : "Senshi",
+			"source" : "Dungeon Meshi",
+			"selected" : false,
+			"img" : "/img/831.jpg"
+		},
+		{
+			"name" : "Falin Touden",
+			"source" : "Dungeon Meshi",
+			"selected" : false,
+			"img" : "/img/832.jpg"
+		},
+		{
+			"name" : "Namari",
+			"source" : "Dungeon Meshi",
+			"selected" : false,
+			"img" : "/img/833.jpg"
+		},
+		{
+			"name" : "Chilchuck Tims",
+			"source" : "Dungeon Meshi",
+			"selected" : false,
+			"img" : "/img/834.jpg"
+		},
+		{
+			"name" : "Ashaf",
+			"source" : "Majo to Yajuu",
+			"selected" : false,
+			"img" : "/img/836.jpg"
+		},
+		{
+			"name" : "Lorraine Vivie",
+			"source" : "Nozomanu Fushi no Boukensha",
+			"selected" : false,
+			"img" : "/img/837.jpg"
+		},
+		{
+			"name" : "Richter",
+			"source" : "Sousou no Frieren",
+			"selected" : false,
+			"img" : "/img/839.jpg"
+		},
+		{
+			"name" : "Utena Hiiragi",
+			"source" : "Mahou Shoujo ni Akogarete",
+			"selected" : false,
+			"img" : "/img/840.jpg"
+		},
+		{
+			"name" : "Haruka Hanabishi",
+			"source" : "Mahou Shoujo ni Akogarete",
+			"selected" : false,
+			"img" : "/img/841.jpg"
+		},
+		{
+			"name" : "Sayo Minakami",
+			"source" : "Mahou Shoujo ni Akogarete",
+			"selected" : false,
+			"img" : "/img/842.jpg"
+		},
+		{
+			"name" : "Kaoruko Tenkawa",
+			"source" : "Mahou Shoujo ni Akogarete",
+			"selected" : false,
+			"img" : "/img/843.jpg"
+		},
+		{
+			"name" : "Kiwi Araga",
+			"source" : "Mahou Shoujo ni Akogarete",
+			"selected" : false,
+			"img" : "/img/844.jpg"
+		},
+		{
+			"name" : "Korisu Morino",
+			"source" : "Mahou Shoujo ni Akogarete",
+			"selected" : false,
+			"img" : "/img/845.jpg"
+		},
+		{
+			"name" : "Matama Akoya",
+			"source" : "Mahou Shoujo ni Akogarete",
+			"selected" : false,
+			"img" : "/img/846.jpg"
+		},
+		{
+			"name" : "Nemo Anemo",
+			"source" : "Mahou Shoujo ni Akogarete",
+			"selected" : false,
+			"img" : "/img/847.jpg"
+		}
+	],
+	"title": "Зима 2024"
+}
