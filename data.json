@@ -1,0 +1,293 @@
+{
+  "candidates": [
+    {
+      "name": "Rin Nanakura",
+      "source": "Giji Harem",
+      "selected": false,
+      "img": "/img/890.jpg"
+    },
+    {
+      "name": "Harley Quinn",
+      "source": "Isekai Suicide Squad",
+      "selected": false,
+      "img": "/img/891.jpg"
+    },
+    {
+      "name": "Dahliya Rossetti",
+      "source": "Madougushi Dahliya wa Utsumukanai",
+      "selected": false,
+      "img": "/img/892.jpg"
+    },
+    {
+      "name": "Mashiro Irodori",
+      "source": "VTuber Nandaga Haishin Kiri Wasuretara Densetsu ni Natteta",
+      "selected": false,
+      "img": "/img/893.jpg"
+    },
+    {
+      "name": "Alisa Mikhailovna Kujou",
+      "source": "Tokidoki Bosotto Russia-go de Dereru Tonari no Alya-san",
+      "selected": false,
+      "img": "/img/894.jpg"
+    },
+    {
+      "name": "Masachika Kuze",
+      "source": "Tokidoki Bosotto Russia-go de Dereru Tonari no Alya-san",
+      "selected": false,
+      "img": "/img/895.jpg"
+    },
+    {
+      "name": "Sayaka Taniyama",
+      "source": "Tokidoki Bosotto Russia-go de Dereru Tonari no Alya-san",
+      "selected": false,
+      "img": "/img/896.jpg"
+    },
+    {
+      "name": "Nonoa Miyamae",
+      "source": "Tokidoki Bosotto Russia-go de Dereru Tonari no Alya-san",
+      "selected": false,
+      "img": "/img/897.jpg"
+    },
+    {
+      "name": "Eiji Kitahama",
+      "source": "Giji Harem",
+      "selected": false,
+      "img": "/img/899.jpg"
+    },
+    {
+      "name": "Yuki Osanai",
+      "source": "Shoushimin Series",
+      "selected": false,
+      "img": "/img/900.jpg"
+    },
+    {
+      "name": "Jougorou Kobato",
+      "source": "Shoushimin Series",
+      "selected": false,
+      "img": "/img/901.jpg"
+    },
+    {
+      "name": "Kengo Doujima",
+      "source": "Shoushimin Series",
+      "selected": false,
+      "img": "/img/902.jpg"
+    },
+    {
+      "name": "Belle Lablac",
+      "source": "Bye Bye, Earth",
+      "selected": false,
+      "img": "/img/903.jpg"
+    },
+    {
+      "name": "Kitty the All",
+      "source": "Bye Bye, Earth",
+      "selected": false,
+      "img": "/img/904.jpg"
+    },
+    {
+      "name": "Masaki Sonoue",
+      "source": "Mayonaka Punch",
+      "selected": false,
+      "img": "/img/905.jpg"
+    },
+    {
+      "name": "Live",
+      "source": "Mayonaka Punch",
+      "selected": false,
+      "img": "/img/906.jpg"
+    },
+    {
+      "name": "Yuki",
+      "source": "Mayonaka Punch",
+      "selected": false,
+      "img": "/img/907.jpg"
+    },
+    {
+      "name": "Fuu",
+      "source": "Mayonaka Punch",
+      "selected": false,
+      "img": "/img/908.jpg"
+    },
+    {
+      "name": "Ichiko",
+      "source": "Mayonaka Punch",
+      "selected": false,
+      "img": "/img/909.jpg"
+    },
+    {
+      "name": "Tokage",
+      "source": "Mayonaka Punch",
+      "selected": false,
+      "img": "/img/910.jpg"
+    },
+    {
+      "name": "Anna Yanami",
+      "source": "Make Heroine ga Oosugiru!",
+      "selected": false,
+      "img": "/img/911.jpg"
+    },
+    {
+      "name": "Chika Komari",
+      "source": "Make Heroine ga Oosugiru!",
+      "selected": false,
+      "img": "/img/912.jpg"
+    },
+    {
+      "name": "Lemon Yakishio",
+      "source": "Make Heroine ga Oosugiru!",
+      "selected": false,
+      "img": "/img/913.jpg"
+    },
+    {
+      "name": "Kazuhiko Nukumizu",
+      "source": "Make Heroine ga Oosugiru!",
+      "selected": false,
+      "img": "/img/914.jpg"
+    },
+    {
+      "name": "Saki Ayase",
+      "source": "Gimai Seikatsu",
+      "selected": false,
+      "img": "/img/915.jpg"
+    },
+    {
+      "name": "Yuuta Asamura",
+      "source": "Gimai Seikatsu",
+      "selected": false,
+      "img": "/img/916.jpg"
+    },
+    {
+      "name": "Shiori Yomiuri",
+      "source": "Gimai Seikatsu",
+      "selected": false,
+      "img": "/img/917.jpg"
+    },
+    {
+      "name": "Maaya Narasaka",
+      "source": "Gimai Seikatsu",
+      "selected": false,
+      "img": "/img/918.jpg"
+    },
+    {
+      "name": "Makoto Hanaoka",
+      "source": "Senpai wa Otokonoko",
+      "selected": false,
+      "img": "/img/919.jpg"
+    },
+    {
+      "name": "Saki Aoi",
+      "source": "Senpai wa Otokonoko",
+      "selected": false,
+      "img": "/img/920.jpg"
+    },
+    {
+      "name": "Ryuuji Taiga",
+      "source": "Senpai wa Otokonoko",
+      "selected": false,
+      "img": "/img/921.jpg"
+    },
+    {
+      "name": "Awayuki Kokorone",
+      "source": "VTuber Nandaga Haishin Kiri Wasuretara Densetsu ni Natteta",
+      "selected": false,
+      "img": "/img/922.jpg"
+    },
+    {
+      "name": "Shion Kaminari",
+      "source": "VTuber Nandaga Haishin Kiri Wasuretara Densetsu ni Natteta",
+      "selected": false,
+      "img": "/img/923.jpg"
+    },
+    {
+      "name": "Kaeru Yamatani",
+      "source": "VTuber Nandaga Haishin Kiri Wasuretara Densetsu ni Natteta",
+      "selected": false,
+      "img": "/img/924.jpg"
+    },
+    {
+      "name": "Chami Yanagase",
+      "source": "VTuber Nandaga Haishin Kiri Wasuretara Densetsu ni Natteta",
+      "selected": false,
+      "img": "/img/925.jpg"
+    },
+    {
+      "name": "Sei Utsuki",
+      "source": "VTuber Nandaga Haishin Kiri Wasuretara Densetsu ni Natteta",
+      "selected": false,
+      "img": "/img/926.jpg"
+    },
+    {
+      "name": "Hikari Mitsuriya",
+      "source": "VTuber Nandaga Haishin Kiri Wasuretara Densetsu ni Natteta",
+      "selected": false,
+      "img": "/img/927.jpg"
+    },
+    {
+      "name": "Hareru Asagiri",
+      "source": "VTuber Nandaga Haishin Kiri Wasuretara Densetsu ni Natteta",
+      "selected": false,
+      "img": "/img/928.jpg"
+    },
+    {
+      "name": "Eirai Sonokaze",
+      "source": "VTuber Nandaga Haishin Kiri Wasuretara Densetsu ni Natteta",
+      "selected": false,
+      "img": "/img/929.jpg"
+    },
+    {
+      "name": "Nekoma Hirune",
+      "source": "VTuber Nandaga Haishin Kiri Wasuretara Densetsu ni Natteta",
+      "selected": false,
+      "img": "/img/930.jpg"
+    },
+    {
+      "name": "Byakuya Mimori",
+      "source": "Katsute Mahou Shoujo to Aku wa Tekitai shiteita.",
+      "selected": false,
+      "img": "/img/931.jpg"
+    },
+    {
+      "name": "Torako Koshi",
+      "source": "Shikanoko Nokonoko Koshitantan",
+      "selected": false,
+      "img": "/img/932.jpg"
+    },
+    {
+      "name": "Noko Shikanoko",
+      "source": "Shikanoko Nokonoko Koshitantan",
+      "selected": false,
+      "img": "/img/933.jpg"
+    },
+    {
+      "name": "Elsa Schtingheim",
+      "source": "Ookami to Koushinryou: Merchant Meets the Wise Wolf",
+      "selected": false,
+      "img": "/img/934.jpg"
+    },
+    {
+      "name": "Kadode Koyama",
+      "source": "Dead Dead Demons Dededede Destruction",
+      "selected": false,
+      "img": "/img/935.jpg"
+    },
+    {
+      "name": "Ouran Nakagawa",
+      "source": "Dead Dead Demons Dededede Destruction",
+      "selected": false,
+      "img": "/img/936.jpg"
+    },
+    {
+      "name": "Rumi Jinguuji",
+      "source": "Koi wa Futago de Warikirenai",
+      "selected": false,
+      "img": "/img/937.jpg"
+    },
+    {
+      "name": "Naori Jinguuji",
+      "source": "Koi wa Futago de Warikirenai",
+      "selected": false,
+      "img": "/img/938.jpg"
+    }
+  ],
+  "title": "Лето 2024"
+}
